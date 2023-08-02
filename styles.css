@@ -4,14 +4,20 @@
 	--deep-purple: #724cf9;
 	--gray: #dfe9f7;
 	--heather-blue: #6391dd;
+	--robins-egg-blue: #66d3f4;
 }
 
 body {
 	background-color: var(--gray);
+	font-family: sans-serif;
 }
 
 img {
 	max-height: 100px;
+}
+
+section {
+	padding: 50px;
 }
 
 #main {
@@ -27,5 +33,5 @@ img {
 }
 
 #contact {
-	background-color: var(--purple);
+	background-color: var(--robins-egg-blue);
 }
