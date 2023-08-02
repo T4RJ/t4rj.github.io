@@ -1,0 +1,31 @@
+:root {
+	--teal: #47e5bb;
+	--purple: #7254f5;
+	--deep-purple: #724cf9;
+	--gray: #dfe9f7;
+	--heather-blue: #6391dd;
+}
+
+body {
+	background-color: var(--gray);
+}
+
+img {
+	max-height: 100px;
+}
+
+#main {
+	background-color: var(--teal);
+}
+
+#apply {
+	background-color: var(--heather-blue);
+}
+
+#learn {
+	background-color: var(--deep-purple);
+}
+
+#contact {
+	background-color: var(--purple);
+}
