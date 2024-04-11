@@ -34,10 +34,26 @@ h2 {
 
 h2 {
 	font-weight: 400;
+	font-size: 16px;
 }
 
 header {
 	display: flex;
+	margin: 40px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+img {
+	width: 150px;
+
+}
+
+header div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 20px;
 }
 
 nav ul {
@@ -109,10 +125,6 @@ nav ul li {
 
 a { 
 	color: var(--deep-plum); 
-}
-
-img {
-	max-height: 100px;
 }
 
 section {
