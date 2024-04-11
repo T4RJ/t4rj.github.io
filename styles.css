@@ -32,13 +32,25 @@ nav ul {
 	justify-content: flex-end;
 }
 
-li {
+nav ul li {
 	margin: 10px;
+	border: none;
+	padding: 10px 25px;
+	border-radius: 10px;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
-button {
-	border: none;
-	padding: 5px;
+.inactive-nav {
+	background-color: white;
+	color: var(--heather-blue);
+}
+
+.active-nav {
+	background-color: var(--heather-blue);
+	color: white;
 }
 
 a { 
@@ -51,22 +63,7 @@ img {
 
 section {
 	padding: 50px;
-}
-
-#main {
-	background-color: var(--teal);
-}
-
-#apply-section {
 	background-color: var(--heather-blue);
-}
-
-#about-section {
-	background-color: var(--purple);
-}
-
-#contact-section {
-	background-color: var(--robins-egg-blue);
 }
 
 .hidden {
