@@ -14,11 +14,11 @@
 	--heather-blue: #6391dd;
 	--robins-egg-blue: #66d3f4;
 	--deep-plum: #281f51;
-}
+	}
 
 body {
 	background-color: var(--gray);
-	font-family: sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 a { 
