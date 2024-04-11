@@ -1,39 +1,30 @@
-const aboutNav = document.querySelector('#about-btn');
-const visionNav = document.querySelector('#vision-btn');
-const applyNav = document.querySelector('#apply-btn');
-const contactNav = document.querySelector('#contact-btn');
+const navButtons = [
+  { name: 'about', selector: document.querySelector('#about-btn') },
+  { name: 'vision', selector: document.querySelector('#vision-btn') },
+  { name: 'apply', selector: document.querySelector('#apply-btn') },
+  { name: 'contact', selector: document.querySelector('#contact-btn') }
+];
 
-const aboutSection = document.querySelector('#about-section');
-const visionSection = document.querySelector('#vision-section');
-const applySection = document.querySelector('#apply-section');
-const contactSection = document.querySelector('#contact-section');
+const contentSections = [
+  { name: 'about', selector: document.querySelector('#about-section') },
+  { name: 'vision', selector: document.querySelector('#vision-section') },
+  { name: 'apply', selector: document.querySelector('#apply-section') },
+  { name: 'contact', selector: document.querySelector('#contact-section') }
+];
 
-aboutNav.addEventListener('click', function() {
-  showElement(aboutSection);
-  hideElements([visionSection, applySection, contactSection]);
-});
-
-visionNav.addEventListener('click', function() {
-  showElement(visionSection);
-  hideElements([aboutSection, applySection, contactSection]);
-});
-
-applyNav.addEventListener('click', function() {
-  showElement(applySection);
-  hideElements([aboutSection, visionSection, contactSection]);
-});
-
-contactNav.addEventListener('click', function() {
-  showElement(contactSection);
-  hideElements([aboutSection, visionSection, applySection]);
-});
-
-function hideElements(elements) {
-  elements.forEach(element => {
-    element.classList.add('hidden');
+navButtons.forEach(button => {
+  button.selector.addEventListener('click', function() {
+    changeDisplay(button.name);
   });
-}
+});
 
-function showElement(element) {
-  element.classList.remove('hidden');
+function changeDisplay(elementToShow) {
+  contentSections.forEach(section => {
+    if (section.name === elementToShow) {
+      section.selector.classList.remove('hidden');
+    } else {
+      section.selector.classList.add('hidden');
+    }
+  });
+  
 }
