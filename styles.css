@@ -1,3 +1,11 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
 	--teal: #47e5bb;
 	--purple: #7d61f9;
