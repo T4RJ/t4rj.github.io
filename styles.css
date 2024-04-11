@@ -32,6 +32,10 @@ h2 {
 	color: var(--deep-purple);
 }
 
+h2 {
+	font-weight: 400;
+}
+
 header {
 	display: flex;
 }
@@ -55,13 +59,51 @@ nav ul li {
 	}
 }
 
-.inactive-nav {
+.inactive-about {
 	background-color: white;
 	color: var(--heather-blue);
 }
 
-.active-nav {
+.active-about,
+.inactive-about:hover,
+#about-section {
 	background-color: var(--heather-blue);
+	color: white;
+}
+
+.inactive-vision {
+	background-color: white;
+	color: var(--deep-purple);
+}
+
+.active-vision,
+.inactive-vision:hover,
+#vision-section {
+	background-color: var(--deep-purple);
+	color: white;
+}
+
+.inactive-apply {
+	background-color: white;
+	color: var(--teal);
+}
+
+.active-apply,
+.inactive-apply:hover,
+#apply-section {
+	background-color: var(--teal);
+	color: white;
+}
+
+.inactive-contact {
+	background-color: white;
+	color: var(--robins-egg-blue);
+}
+
+.active-contact,
+.inactive-contact:hover,
+#contact-section  {
+	background-color: var(--robins-egg-blue);
 	color: white;
 }
 

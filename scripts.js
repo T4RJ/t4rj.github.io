@@ -36,11 +36,11 @@ function showContent(elementToShow) {
 function updateTabs(elementToShow) {
   navButtons.forEach(button => {
     if (button.name === elementToShow) {
-      button.selector.classList.add('active-nav');
-      button.selector.classList.remove('inactive-nav');
+      button.selector.classList.add(`active-${button.name}`);
+      button.selector.classList.remove(`inactive-${button.name}`);
     } else {
-      button.selector.classList.add('inactive-nav');
-      button.selector.classList.remove('active-nav');
+      button.selector.classList.add(`inactive-${button.name}`);
+      button.selector.classList.remove(`active-${button.name}`);
     }
   });
 }
