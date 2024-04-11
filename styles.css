@@ -48,3 +48,7 @@ section {
 #contact {
 	background-color: var(--robins-egg-blue);
 }
+
+.hidden {
+	display: none;
+}
