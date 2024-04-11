@@ -14,11 +14,31 @@
 	--heather-blue: #6391dd;
 	--robins-egg-blue: #66d3f4;
 	--deep-plum: #281f51;
+	--font: "Poppins", sans-serif;
 	}
 
 body {
 	background-color: var(--gray);
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font);
+}
+
+header {
+	display: flex;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+li {
+	margin: 10px;
+}
+
+button {
+	border: none;
+	padding: 5px;
 }
 
 a { 
@@ -37,15 +57,15 @@ section {
 	background-color: var(--teal);
 }
 
-#apply {
+#apply-section {
 	background-color: var(--heather-blue);
 }
 
-#about {
+#about-section {
 	background-color: var(--purple);
 }
 
-#contact {
+#contact-section {
 	background-color: var(--robins-egg-blue);
 }
 
