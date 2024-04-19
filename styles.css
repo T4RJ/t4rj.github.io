@@ -1,7 +1,7 @@
 /* VARIABLES */
 
 :root {
-	--teal: #47e5bb;
+	--teal: #47E5BB;
 	--purple: #7d61f9;
 	--deep-purple: #724cf9;
 	--gray: #dfe9f7;
@@ -9,6 +9,9 @@
 	--robins-egg-blue: #66d3f4;
 	--deep-plum: #281f51;
 	--font: "Poppins", sans-serif;
+	/* new colors */
+	--dark-teal: #5BB6CE;
+	--light-purple: #C0AEDD;
 }
 
 /* GENERAL */
@@ -83,17 +86,24 @@ nav ul li {
 	}
 }
 
+/* ABOUT */
+
 .inactive-about {
 	background-color: white;
 	color: var(--heather-blue);
 }
 
 .active-about,
-.inactive-about:hover,
-#about-section {
+.inactive-about:hover {
 	background-color: var(--heather-blue);
 	color: white;
 }
+
+#about-section {
+	border: 25px solid var(--heather-blue);
+}
+
+/* VISION + VALUES */
 
 .inactive-vision {
 	background-color: white;
@@ -101,11 +111,16 @@ nav ul li {
 }
 
 .active-vision,
-.inactive-vision:hover,
-#vision-section {
+.inactive-vision:hover {
 	background-color: var(--deep-purple);
 	color: white;
 }
+
+#vision-section {
+  border: 25px solid var(--deep-purple);
+}
+
+/* GET INVOLVED */
 
 .inactive-apply {
 	background-color: white;
@@ -113,11 +128,16 @@ nav ul li {
 }
 
 .active-apply,
-.inactive-apply:hover,
-#apply-section {
+.inactive-apply:hover {
 	background-color: var(--teal);
 	color: white;
 }
+
+#apply-section {
+	border: 25px solid var(--teal);
+}
+
+/* CONTACT US */
 
 .inactive-contact {
 	background-color: white;
@@ -125,18 +145,21 @@ nav ul li {
 }
 
 .active-contact,
-.inactive-contact:hover,
-#contact-section  {
+.inactive-contact:hover {
 	background-color: var(--robins-egg-blue);
 	color: white;
+}
+
+#contact-section {
+  border: 25px solid var(--robins-egg-blue);
 }
 
 /* CONTENT SECTIONS */
 
 section {
 	padding: 50px;
-	background-color: var(--heather-blue);
 	height: 100%;
+	background: white;
 }
 
 /* HIDDEN CLASS (must stay at bottom) */
