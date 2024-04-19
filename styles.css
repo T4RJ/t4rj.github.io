@@ -34,6 +34,10 @@ body {
 	height: 100%;
 }
 
+/* * {
+	border: 1px solid red;
+} */
+
 /* HEADER */
 
 header {
@@ -55,6 +59,12 @@ header div {
 	margin-left: 20px;
 }
 
+.header-flex {
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
 h1, h2 {
 	color: var(--deep-purple);
 }
@@ -62,6 +72,20 @@ h1, h2 {
 h2 {
 	font-weight: 400;
 	font-size: 16px;
+}
+
+button {
+	border: none;
+	background-color: var(--deep-plum);
+	padding: 10px 25px;
+	border-radius: 5px;
+	font-size: 20px;
+	color: white;
+
+	&:hover {
+		cursor: pointer;
+		background-color: var(--teal);
+	}
 }
 
 /* NAV BAR */
@@ -152,6 +176,7 @@ nav ul li {
 
 #contact-section {
   border: 25px solid var(--robins-egg-blue);
+	height: 100%;
 }
 
 /* CONTENT SECTIONS */
