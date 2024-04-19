@@ -55,8 +55,7 @@ header div {
 	margin-left: 20px;
 }
 
-h1,
-h2 {
+h1, h2 {
 	color: var(--deep-purple);
 }
 
@@ -80,6 +79,7 @@ nav ul li {
 	padding: 5px 25px;
 	border-radius: 10px 10px 0px 0px;
 	margin-bottom: 0px; 
+	font-size: 16px;
 
 	&:hover {
 		cursor: pointer;
@@ -158,8 +158,16 @@ nav ul li {
 
 section {
 	padding: 50px;
-	height: 100%;
 	background: white;
+}
+
+h4 {
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+
+p, li, a {
+	font-size: 13px;
 }
 
 /* HIDDEN CLASS (must stay at bottom) */
