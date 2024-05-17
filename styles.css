@@ -200,3 +200,49 @@ p, li, a {
 .hidden {
 	display: none;
 }
+
+/* MEDIA QUERIES (SCREEN SIZE RESPONSIVENESS) */
+
+@media (max-width: 1060px) {
+  h2 {
+		font-size: 14px;
+	}
+
+	button {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 965px) {
+	header {
+		flex-direction: column;
+	}
+
+  .header-flex {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.header-flex a {
+		text-align: center;
+		margin-top: 10px;
+	}
+  
+	.header-flex div {
+		text-align: center;
+	}
+}
+
+@media (max-width: 340px) {
+	header {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 10vw;
+	}
+
+	h2 {
+		font-size: 5vw;
+	}
+}
