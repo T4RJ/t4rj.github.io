@@ -34,10 +34,6 @@ body {
 	height: 100%;
 }
 
-/* * {
-	border: 1px solid red;
-} */
-
 /* HEADER */
 
 header {
@@ -194,10 +190,16 @@ p, li, a {
 	font-size: 13px;
 }
 
-/* HIDDEN CLASS (must stay at bottom) */
+p a {
+	font-size: 14px;
+}
 
-.hidden {
-	display: none;
+section > ul > li {
+	margin-left: 40px;
+}
+
+section > ul > ul > li {
+	margin-left: 80px;
 }
 
 /* MEDIA QUERIES (SCREEN SIZE RESPONSIVENESS) */
@@ -260,6 +262,14 @@ p, li, a {
 		display: flex;
 		flex-direction: column;
 	}
+	
+	section > ul > li {
+		margin-left: 20px;
+	}
+	
+	section > ul > ul > li {
+		margin-left: 40px;
+	}
 }
 
 @media (max-width: 340px) {
@@ -278,4 +288,10 @@ p, li, a {
 	h2 {
 		font-size: 5vw;
 	}
+}
+
+/* HIDDEN CLASS (must stay at bottom) */
+
+.hidden {
+	display: none;
 }
