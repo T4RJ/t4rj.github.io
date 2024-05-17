@@ -49,7 +49,6 @@ header {
 
 img {
 	width: 150px;
-
 }
 
 header div {
@@ -233,7 +232,41 @@ p, li, a {
 	}
 }
 
+@media (max-width: 730px) {
+  button {
+		display: none;
+	}
+
+	nav {
+    display: flex;
+		justify-content: center;
+	}
+
+	nav ul {
+		display: grid;
+		padding: 0px;
+		margin-bottom: 20px;
+		grid-template-columns: 200px 200px;
+	}
+
+	nav ul li {
+		border-radius: 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 420px) {
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 @media (max-width: 340px) {
+  img {
+    width: 120px;
+	}
+
 	header {
 		margin: 0;
 	}
