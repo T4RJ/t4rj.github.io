@@ -16,6 +16,12 @@ navButtons.forEach(button => {
   button.selector.addEventListener('click', function() {
     changeDisplay(button.name);
   });
+
+  button.selector.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      changeDisplay(button.name);
+    }
+  });
 });
 
 function changeDisplay(elementToShow) {
