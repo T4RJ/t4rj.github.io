@@ -1,3 +1,21 @@
+/* VARIABLES */
+
+:root {
+	--teal: #47E5BB;
+	--purple: #7d61f9;
+	--deep-purple: #724cf9;
+	--gray: #dfe9f7;
+	--heather-blue: #6391dd;
+	--robins-egg-blue: #66d3f4;
+	--deep-plum: #281f51;
+	--font: "Poppins", sans-serif;
+	/* new colors */
+	--dark-teal: #5BB6CE;
+	--light-purple: #C0AEDD;
+}
+
+/* GENERAL */
+
 *,
 *:after,
 *:before {
@@ -6,45 +24,274 @@
   padding: 0;
 }
 
-:root {
-	--teal: #47e5bb;
-	--purple: #7d61f9;
-	--deep-purple: #724cf9;
-	--gray: #dfe9f7;
-	--heather-blue: #6391dd;
-	--robins-egg-blue: #66d3f4;
-	--deep-plum: #281f51;
+html {
+	height: 100%;
 }
 
 body {
 	background-color: var(--gray);
-	font-family: sans-serif;
+	font-family: var(--font);
+	height: 100%;
 }
 
-a { 
-	color: var(--deep-plum); 
+/* HEADER */
+
+header {
+	display: flex;
+	margin: 40px;
+	margin-bottom: 10px;
+	align-items: center;
 }
 
 img {
-	max-height: 100px;
+	width: 150px;
 }
+
+header div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 20px;
+}
+
+.header-flex {
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+h1, h2 {
+	color: var(--deep-purple);
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+button {
+	border: none;
+	background-color: var(--deep-plum);
+	padding: 10px 25px;
+	border-radius: 5px;
+	font-size: 20px;
+	color: white;
+
+	&:hover {
+		cursor: pointer;
+		background-color: var(--teal);
+	}
+}
+
+/* NAV BAR */
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+
+nav ul li {
+	margin: 10px;
+	border: none;
+	padding: 5px 25px;
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: 0px; 
+	font-size: 16px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+/* ABOUT */
+
+.inactive-about {
+	background-color: white;
+	color: var(--heather-blue);
+}
+
+.active-about,
+.inactive-about:hover {
+	background-color: var(--heather-blue);
+	color: white;
+}
+
+#about-section {
+	border: 25px solid var(--heather-blue);
+}
+
+/* VISION + VALUES */
+
+.inactive-vision {
+	background-color: white;
+	color: var(--deep-purple);
+}
+
+.active-vision,
+.inactive-vision:hover {
+	background-color: var(--deep-purple);
+	color: white;
+}
+
+#vision-section {
+  border: 25px solid var(--deep-purple);
+}
+
+/* GET INVOLVED */
+
+.inactive-apply {
+	background-color: white;
+	color: var(--teal);
+}
+
+.active-apply,
+.inactive-apply:hover {
+	background-color: var(--teal);
+	color: white;
+}
+
+#apply-section {
+	border: 25px solid var(--teal);
+}
+
+/* CONTACT US */
+
+.inactive-contact {
+	background-color: white;
+	color: var(--robins-egg-blue);
+}
+
+.active-contact,
+.inactive-contact:hover {
+	background-color: var(--robins-egg-blue);
+	color: white;
+}
+
+#contact-section {
+  border: 25px solid var(--robins-egg-blue);
+	height: 100%;
+}
+
+/* CONTENT SECTIONS */
 
 section {
 	padding: 50px;
+	background: white;
 }
 
-#main {
-	background-color: var(--teal);
+h4 {
+	margin-top: 25px;
+	margin-bottom: 5px;
 }
 
-#apply {
-	background-color: var(--heather-blue);
+p, li, a {
+	font-size: 13px;
 }
 
-#learn {
-	background-color: var(--purple);
+p a {
+	font-size: 14px;
 }
 
-#contact {
-	background-color: var(--robins-egg-blue);
+section > ul > li {
+	margin-left: 40px;
+}
+
+section > ul > ul > li {
+	margin-left: 80px;
+}
+
+/* MEDIA QUERIES (SCREEN SIZE RESPONSIVENESS) */
+
+@media (max-width: 1060px) {
+  h2 {
+		font-size: 14px;
+	}
+
+	button {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 965px) {
+	header {
+		flex-direction: column;
+	}
+
+  .header-flex {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	.header-flex a {
+		text-align: center;
+		margin-top: 10px;
+	}
+  
+	.header-flex div {
+		text-align: center;
+	}
+}
+
+@media (max-width: 730px) {
+  button {
+		display: none;
+	}
+
+	nav {
+    display: flex;
+		justify-content: center;
+	}
+
+	nav ul {
+		display: grid;
+		padding: 0px;
+		margin-bottom: 20px;
+		grid-template-columns: 200px 200px;
+	}
+
+	nav ul li {
+		border-radius: 10px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 420px) {
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	section > ul > li {
+		margin-left: 20px;
+	}
+	
+	section > ul > ul > li {
+		margin-left: 40px;
+	}
+}
+
+@media (max-width: 340px) {
+  img {
+    width: 120px;
+	}
+
+	header {
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 10vw;
+	}
+
+	h2 {
+		font-size: 5vw;
+	}
+}
+
+/* HIDDEN CLASS (must stay at bottom) */
+
+.hidden {
+	display: none;
 }
