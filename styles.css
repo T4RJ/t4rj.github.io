@@ -176,6 +176,7 @@ nav ul li {
 
 .content-container {
 	height: 100%;
+	gap: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
