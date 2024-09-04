@@ -240,6 +240,10 @@ section > ul > ul > li {
 	.header-flex div {
 		text-align: center;
 	}
+
+	.header-flex-inner-div {
+		margin: 0;
+	}
 }
 
 @media (max-width: 730px) {
