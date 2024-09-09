@@ -171,7 +171,6 @@ nav ul li {
 
 #contact-section {
   	border: 25px solid var(--robins-egg-blue);
-	height: 100%;
 }
 
 .content-container {
@@ -180,6 +179,17 @@ nav ul li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.text-container {
+	gap: 8px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.iframe-container {
+	height: 100vh;
 }
 
 /* CONTENT SECTIONS */
